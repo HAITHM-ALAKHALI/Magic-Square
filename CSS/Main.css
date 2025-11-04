@@ -1,0 +1,46 @@
+@import url(https://use.typekit.net/zlh0fzl.csshttps://use.typekit.net/zlh0fzl.css);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: pixelify-sans;
+}
+body{
+    width: 100%;
+    height: 80vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body .main h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+body .main .game-start{
+    width: 95px;
+    height: 45px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+body .main .game-start:hover{
+    transform: scale(1.1);
+    transition: 1.1s;
+}
+body .main .game-start a{
+    color :#ffff;
+    text-decoration: none;
+    font-size: 25px;
+}

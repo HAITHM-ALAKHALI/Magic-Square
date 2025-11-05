@@ -67,3 +67,20 @@ body .controls button{
 button:hover{
     opacity: 0.8;
 }
+body .Explain-Game button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+body .Explain-Game button::placeholder{
+    color: #ffff;
+    font-family: pixelify-sans;
+}
+body .Explain-Game button:hover{
+    opacity: 0.8;
+}

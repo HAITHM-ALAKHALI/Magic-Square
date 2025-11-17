@@ -8,25 +8,27 @@
     
 </head>
 <body>
+    <h1 id="levelTitle">Level 1</h1>
     <div class="controls">
-        <input type="number" placeholder="Number">
+        <!-- <input type="number" placeholder="Number"> -->
         <button>Shuffle</button>
         <button>Reset</button>
         <button>Check</button>
     </div>
     <div class="Game-Table">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </div>
-    <div class="Explain-Game"><button>Explain</button></div>
+    <div class="footer">
+        <div class="Explain-Game"><button>Explain</button></div>
+    <div id="resultModal" class="modal">
+  <div id="resultBox" class="modal-content">
+    <span id="resultText"></span>
+    <button id="passwordBtn" style="display:none; margin-left:10px;">Enter Password</button>
+    <button id="closeModal">Close</button>
+  </div>
+</div>
+    <div class="next-level"><button>Next level</button></div>
+    </div>
+    
     <script src="../JS/Game-style.js"></script>
 </body>
-
 </html>

@@ -21,8 +21,6 @@ body{
     width: 300px;
     height: 300px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 4px;
 }
 .Game-Table div{
@@ -39,22 +37,6 @@ body .controls{
     display: flex;
     gap: 10px;
 }
-body .controls input{
-    padding: 8px;
-    width: 100px;
-    border-radius: 5px;
-    border: 1px solid #333;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-body .controls input::placeholder{
-    color: #ffff;
-    font-family: pixelify-sans;
-}
-body .controls input:hover{
-    opacity: 0.8;
-}
 body .controls button{
     padding: 10px 20px;
     font-size: 16px;
@@ -67,7 +49,37 @@ body .controls button{
 button:hover{
     opacity: 0.8;
 }
-body .Explain-Game button{
+body .Game-Table div input{
+     width: 100%;
+    height: 100%;
+    font-size: 28px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+/* Chrome, Edge, Safari */
+.Game-Table div input::-webkit-inner-spin-button,
+.Game-Table div input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.Game-Table div input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+body .footer button{
     padding: 10px 20px;
     margin-top: 20px;
     font-size: 16px;
@@ -77,10 +89,71 @@ body .Explain-Game button{
     background-color: black;
     color: white;
 }
-body .Explain-Game button::placeholder{
+body .footer .Explain-Game button::placeholder{
     color: #ffff;
     font-family: pixelify-sans;
 }
-body .Explain-Game button:hover{
+body .footer .Explain-Game button:hover{
     opacity: 0.8;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#closeModal {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#closeModal:hover {
+    background-color: #444;
+}
+
+/* خلفية نافذة الرسالة */
+#resultModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* خلفية شفافة غامقة */
+    justify-content: center;
+    align-items: center;
+}
+
+/* صندوق الرسالة */
+#resultBox {
+    background-color: #000;  /* 🔥 خلفية سوداء */
+    color: #fff;            /* نص أبيض */
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid #444; /* حدّ خفيف */
+    font-family: Arial, sans-serif;
+    white-space: pre-line;  /* لتحسين عرض الأسطر */
 }

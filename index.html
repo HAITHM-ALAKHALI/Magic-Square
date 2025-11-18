@@ -8,7 +8,31 @@
     
 </head>
 <body>
-    <div class="main"><h1>Welcome in Magic Square game</h1><br>
-        <div class="game-start"><a href="HTML/GAME.html" target="_blank">Start</a></div></div>
+    <div class="main">
+    <h1>Welcome in Magic Square game</h1><br>
+
+    <div class="game-start">
+        <a href="HTML/GAME.html" target="_blank">Start</a>
+    </div>
+
+    <!-- زر الشرح تحت الستارت -->
+    <div class="explain-btn">Explain Game</div>
+</div>
+
+
+<!-- Modal -->
+<div id="explainModal" class="modal">
+    <div class="modal-content">
+        <h2>What is Magic Square?</h2>
+        <p>
+            The Magic Square is a puzzle where you must fill a grid with numbers so that 
+            each row, column, and both diagonals have the same total sum. 
+            Each level has fixed numbers you cannot change.
+        </p>
+        <button id="closeExplain">Close</button>
+    </div>
+</div>
+
+        <script src="/JS/Main.js"></script>
 </body>
 </html>

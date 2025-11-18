@@ -16,14 +16,14 @@ const levelTitle = document.getElementById("levelTitle");
 const levels = [
     // 3x3 with 1 fixed number
     { 
-        explanation: "📘 Level 1:\n• 3x3 grid, center fixed at 5.\n• Fill numbers 1-9 to make magic square.",
+        explanation: "📘 Level 1:\n• 3x3 grid, center fixed at 5.\n• Fill remaining numbers to make all rows, columns, diagonals sum 15.",
         grid: [null,null,null,null,5,null,null,null,null],
         size: 3
     },
 
     // 3x3 with 2 fixed numbers
     { 
-        explanation: "📘 Level 2:\n• 3x3 grid, top-left 8, bottom-right 2 fixed.\n• Complete the magic square.",
+        explanation: "📘 Level 2:\n• 3x3 grid, top-left 8, bottom-right 2 fixed.\n• Fill remaining numbers to make all rows, columns, diagonals sum 15.",
         grid: [8,null,null,null,5,null,null,null,2],
         size: 3
     },

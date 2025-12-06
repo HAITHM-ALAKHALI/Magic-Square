@@ -1,10 +1,8 @@
-@import url(https://use.typekit.net/https://use.typekit.net/zlh0fzl.css);
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: pixelify-sans;
+    font-family: serif;
 }
 body{
     width: 100%;
@@ -15,7 +13,6 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-family: Arial, sans-serif;
 }
 .Game-Table{
     width: 300px;
@@ -70,6 +67,7 @@ body .Game-Table div input{
 /* Firefox */
 .Game-Table div input[type=number] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 body .footer{
@@ -88,10 +86,6 @@ body .footer button{
     border-radius: 5px;
     background-color: black;
     color: white;
-}
-body .footer .Explain-Game button::placeholder{
-    color: #ffff;
-    font-family: pixelify-sans;
 }
 body .footer .Explain-Game button:hover{
     opacity: 0.8;
@@ -132,7 +126,6 @@ body .footer .Explain-Game button:hover{
     background-color: #444;
 }
 
-/* خلفية نافذة الرسالة */
 #resultModal {
     display: none;
     position: fixed;
@@ -141,19 +134,18 @@ body .footer .Explain-Game button:hover{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8); /* خلفية شفافة غامقة */
+    background-color: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
 }
 
-/* صندوق الرسالة */
 #resultBox {
-    background-color: #000;  /* 🔥 خلفية سوداء */
-    color: #fff;            /* نص أبيض */
+    background-color: #000;  
+    color: #fff;            
     padding: 25px;
     width: 350px;
     border-radius: 10px;
-    border: 2px solid #444; /* حدّ خفيف */
+    border: 2px solid #444; 
     font-family: Arial, sans-serif;
-    white-space: pre-line;  /* لتحسين عرض الأسطر */
+    white-space: pre-line;  
 }
